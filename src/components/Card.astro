@@ -1,0 +1,71 @@
+---
+export interface Props {
+  sommerSkole?: boolean;
+  cardTitle?: string;
+  cardTitleBagside?: string;
+  cardTextForside?: string;
+  cardTextBagside?: string;
+  cardImage?: string;
+  cardImageAlt?: string;
+}
+
+const {
+  sommerSkole,
+  cardTitle,
+  cardTitleBagside,
+  cardTextForside,
+  cardTextBagside,
+  cardImage,
+  cardImageAlt,
+} = Astro.props as Props;
+---
+
+<label class="swap swap-flip">
+  <input type="checkbox" />
+  <div class="swap-on">
+    <div class="relative shadow-2xs rounded-xl w-70 h-100 px-5">
+      <img
+        class="w-60 h-100 rounded-xl brightness-80"
+        src={`/img/${cardImage}`}
+        alt={cardImageAlt}
+      />
+      <div class="absolute top-0 start-0 end-0 w-70 h-100 items-center px-5">
+        <div class="absolute top-2 left-2 z-10">
+          {
+            sommerSkole && (
+              <div class="badge badge-soft badge-primary bg-orange-400">
+                Sommer hojskole
+              </div>
+            )
+          }
+        </div>
+        <div class="p-4 md:p-5 mt-5">
+          <h3 class="text-lg font-bold text-white">{cardTitle}</h3>
+          <p class="mt-1 text-white">
+            {cardTextForside}
+          </p>
+          <p class="text-xs text-gray-500">Klik for at læse mere</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="swap-off">
+    <div class="relative shadow-2xs rounded-xl w-70 h-100 px-5">
+      <img
+        class="w-60 h-100 rounded-xl brightness-80"
+        src={`/img/${cardImage}`}
+        alt={cardImageAlt}
+      />
+      <div class="absolute top-0 start-0 end-0 w-70 h-100 items-center px-5">
+        <div class="absolute top-2 left-2 z-10"></div>
+        <div class="p-4 md:p-5">
+          <h3 class="text-lg font-bold text-white">{cardTitleBagside}</h3>
+          <p class="mt-1 text-white">
+            {cardTextBagside}
+          </p>
+          <p class="text-xs text-gray-500">Tilbage</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</label>

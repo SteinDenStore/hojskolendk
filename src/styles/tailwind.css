@@ -1,11 +1,16 @@
-@import 'tailwindcss';
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+@import "tailwindcss";
 
 @plugin '@tailwindcss/typography';
 @plugin '@tailwindcss/forms';
 
+@plugin "daisyui" {
+  themes: caramellatte;
+}
 
 @theme {
-  /* Her tilføjes theme variable // tokens */
+  --font-display: "Bebas Neue", sans-serif;
+  --font-p: "JetBrains Mono", monospace;
 }
 
 @layer base {
@@ -18,9 +23,7 @@
   }
 }
 
-@layer components{
-
+@layer components {
 }
-@layer utilities{
-  
+@layer utilities {
 }
