@@ -1,5 +1,116 @@
 ---
 ---
-<div>
-Header - tilføj navigation mm.
+
+<div class="drawer drawer-end">
+    <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+    
+    <div class="drawer-content flex">
+      <!-- Orange bar i toppen på mobil og til højre på desktop -->
+    <div class="fixed top-0 left-0 w-full lg:right-0 lg:left-auto lg:w-[120px] bg-[#F26430] flex justify-between items-center py-4 px-6 z-20 lg:top-0 lg:h-screen lg:flex-col lg:items-center lg:justify-start">
+        <div class="flex items-center ml-auto lg:ml-0">
+          <label for="my-drawer-4" class="group cursor-pointer flex items-center space-x-2">
+            <!-- Menu icon -->
+            <div class="relative w-10 h-10">
+              <!-- Tre streger (burgermenu) -->
+              <div class="absolute top-2 w-6 h-0.5 bg-[#FFE3C2] group-hover:bg-[#FFF2E4] transition-all burger-line1"></div>
+              <div class="absolute top-4 w-8 h-0.5 bg-[#FFE3C2] group-hover:bg-[#FFF2E4] transition-all burger-line2"></div>
+              <div class="absolute top-6 w-10 h-0.5 bg-[#FFE3C2] group-hover:bg-[#FFF2E4] transition-all burger-line3"></div>
+            </div>
+            <span class="text-[#FFE3C2] text-[20px] font-p group-hover:text-[#FFF2E4] transition-colors">menu</span>
+          </label>
+        </div>
+
+        <div class="hidden lg:flex flex-col items-center space-y-8 mt-120">
+            <a href="#"><img src="/img/facebook_ikon.png" alt="Facebook" class="w-3 h-5" /></a>
+            <a href="#"><img src="/img/youtube_ikon.png" alt="YouTube" class="w-5 h-5" /></a>
+            <a href="#"><img src="/img/instagram_ikon.png" alt="Instagram" class="w-5 h-5" /></a>
+          </div>
+          
+          
+      </div>
+    
+      <!-- Resten af sidens indhold -->
+      <div class="flex-1">
+        <!-- Dit normale sideindhold her -->
+      </div>
+    </div>
+
+    
+    
+    <!-- Drawer-menu som folder ud -->
+    <div class="drawer-side z-30 lg:w-[740px] lg:right-0 lg:fixed lg:top-0 lg:bottom-0 transform lg:translate-x-full transition-transform"> 
+        <!-- Adjusted to fold out from the right -->
+        <label for="my-drawer-4" class="drawer-overlay"></label>
+    
+        <!-- KRYDS (luk menu) -->
+        <div class="absolute top-6 right-8 z-50">
+            <label for="my-drawer-4" class="cursor-pointer text-[#FFE3C2] text-[40px] hover:text-[#FFF2E4] transition-colors">
+                ✕
+            </label>
+        </div>
+    
+      <ul class="menu bg-[#F26430] text-[#FFCC91] text-[40px] min-h-full w-[100%] lg:w-[800px] pt-30 pl-35 font-display lg:text-[50px]">
+        <!-- Menu items -->
+        <div tabindex="0" class="collapse">
+          <div class="collapse-title hover:text-[#FFF2E4] hover:bg-transparent py-1">2 Måneder</div>
+          <div class="collapse-content">
+            <ul>
+              <li><a class="text-[15px] font-p hover:text-[#FFF2E4] hover:bg-transparent">BRASILIEN, COLOMBIA, COSTA RICA & MEXICO</a></li>
+              <li><a class="text-[15px] font-p hover:text-[#FFF2E4] hover:bg-transparent">MALDIVERNE, SRI LANKA, BALI & GILI ISLANDS</a></li>
+              <li><a class="text-[15px] font-p hover:text-[#FFF2E4] hover:bg-transparent">AUSTRALIEN, JAPAN, BALI & GILI ISLANDS</a></li>
+            </ul>
+          </div>
+        </div>
+    
+        <!-- Flere menu items -->
+        <div tabindex="0" class="collapse">
+          <div class="collapse-title hover:text-[#FFF2E4] hover:bg-transparent py-1">3 Måneder</div>
+          <div class="collapse-content">
+            <ul>
+              <li><a class="text-[15px] font-p hover:text-[#FFF2E4] hover:bg-transparent">BRASILIEN, COLOMBIA, COSTA RICA & MEXICO</a></li>
+              <li><a class="text-[15px] font-p hover:text-[#FFF2E4] hover:bg-transparent">MALDIVERNE, SRI LANKA, BALI & GILI ISLANDS</a></li>
+              <li><a class="text-[15px] font-p hover:text-[#FFF2E4] hover:bg-transparent">AUSTRALIEN, JAPAN, BALI & GILI ISLANDS</a></li>
+            </ul>
+          </div>
+        </div>
+    
+        <div tabindex="0" class="collapse">
+          <div class="collapse-title hover:text-[#FFF2E4] hover:bg-transparent py-1">Sommerhøjskole</div>
+          <div class="collapse-content">
+            <ul>
+              <li><a class="text-[15px] font-p hover:text-[#FFF2E4] hover:bg-transparent">BRASILIEN, COLOMBIA, COSTA RICA & MEXICO</a></li>
+            </ul>
+          </div>
+        </div>
+    
+        <div tabindex="0" class="collapse">
+          <div class="collapse-title hover:text-[#FFF2E4] hover:bg-transparent py-1">Om os</div>
+          <div class="collapse-content">
+            <ul>
+              <li><a class="text-[15px] font-p hover:text-[#FFF2E4] hover:bg-transparent">BRASILIEN, COLOMBIA, COSTA RICA & MEXICO</a></li>
+            </ul>
+          </div>
+        </div>
+    
+        <div tabindex="0" class="collapse">
+          <div class="collapse-title hover:text-[#FFF2E4] hover:bg-transparent py-1">Tilmeld dig</div>
+          <div class="collapse-content">
+            <ul>
+              <li><a class="text-[15px] font-p hover:text-[#FFF2E4] hover:bg-transparent">BRASILIEN, COLOMBIA, COSTA RICA & MEXICO</a></li>
+            </ul>
+          </div>
+        </div>
+    
+        <div tabindex="0" class="collapse">
+          <div class="collapse-title hover:text-[#FFF2E4] hover:bg-transparent py-1">Infomøder</div>
+          <div class="collapse-content">
+            <ul>
+              <li><a class="text-[15px] font-p hover:text-[#FFF2E4] hover:bg-transparent">BRASILIEN, COLOMBIA, COSTA RICA & MEXICO</a></li>
+            </ul>
+          </div>
+        </div>
+      </ul>
+    </div>
 </div>
+
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
