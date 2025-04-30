@@ -18,17 +18,19 @@ import Form from "../components/Form.astro";
       />
       <div class="absolute"></div>
       <div class="absolute inset-0 flex flex-col items-center justify-center">
-        <h1 class="text-8xl text-[#FFE3C2] font-bold font-display">HöJSKOLENDK</h1>
+        <h1 class="text-8xl text-[#FFE3C2] font-bold font-display">
+          HöJSKOLENDK
+        </h1>
         <p class="text-xl text-[#FFE3C2] mt-4 font-p">Fælleskab og eventyr</p>
       </div>
     </div>
   </section>
-  <section class="grid grid-cols-12">
+  <section class="grid lg:grid-cols-12 sm:grid-cols-2">
     <div class="col-span-7 bg-red-900 p-15">
-      <h2 class="text-white text-4xl mx-10 font-display">
+      <h2 class="text-white text-6xl lg:mx-10 font-display">
         Vil du på dit livs eventyr?
       </h2>
-      <p class="text-white mt-5 mx-10 prose font-p">
+      <p class="text-white mt-5 lg:mx-10 prose font-p">
         HÖJSKOLENDK er en dansk højskole for unge i alderen ca. 18-30 år. Vi
         brænder for oplevelser, fællesskab og mødet med nye mennesker og
         kulturer; derfor laver vi eventyrlige højskoleophold i udlandet.
@@ -38,7 +40,7 @@ import Form from "../components/Form.astro";
         drømmer om en fed grupperejse med andre skønne unge, vil opleve et
         stærkt sammenhold og ønsker inspirerende og meningsfuld undervisning.
       </p>
-      <p class="text-white mt-10 mx-10 prose font-p">
+      <p class="text-white mt-10 lg:mx-10 prose font-p">
         Vi glæder os til at lære dig at kende!
       </p>
     </div>
@@ -50,7 +52,7 @@ import Form from "../components/Form.astro";
       />
     </div>
   </section>
-  <section class="grid grid-cols-12">
+  <section class="grid lg:grid-cols-12 sm:grid-cols-2">
     <div class="col-span-5">
       <img
         class="object-cover w-full h-full"
@@ -58,14 +60,14 @@ import Form from "../components/Form.astro";
         alt="stranden"
       />
     </div>
-    <div class="col-span-7 bg-amber-600 p-15">
-      <h2 class="text-white text-4xl mx-9 font-display">
+    <div class="col-span-7 bg-[#F26430] p-15">
+      <h2 class="text-white text-6xl lg:mr-20 font-display">
         Vi har fokus på fællesskab
       </h2>
-      <p class="mt-5 mx-9 text-white font-p">
+      <p class="mt-5 lg:mr-9 text-white font-p">
         Når du rejser på højskole i udlandet med HÖJSKOLENDK…
       </p>
-      <ul class="list-none mx-10 mt-10 font-p">
+      <ul class="list-none lg:mr-20 mt-10 font-p">
         <li class="mt-5 flex items-start text-white">
           <span class="mr-2">➤</span>
           bliver du en del af et fantastisk fællesskab med et stærkt sammenhold
@@ -143,7 +145,9 @@ import Form from "../components/Form.astro";
       </p>
     </div>
   </section>
-  <section class="grid grid-cols-12 gap-5 mt-20 bg-orange-100 p-10">
+  <section
+    class="grid lg:grid-cols-12 sm:grid-cols-2 gap-5 mt-20 bg-orange-100 p-10"
+  >
     <div class="col-span-7">
       <p class="text-xl p-5 text-red-900 font-p">
         OBS: Når du klikker på “Reserver plads”, reserverer du ikke en plads på
@@ -155,7 +159,7 @@ import Form from "../components/Form.astro";
       <Button variant="light" label="Reserver plads" />
     </div>
   </section>
-  <section class="bg-amber-600 p-10 mt-20">
+  <section class="bg-[#F26430] p-10 mt-20">
     <div class="">
       <p class="text-center text-white font-display text-5xl">
         Læs vore anmeldelser på <a
@@ -182,7 +186,7 @@ import Form from "../components/Form.astro";
     </div>
   </section>
 
-  <section class="grid grid-cols-12 mt-20">
+  <section class="grid lg:grid-cols-12 sm:grid-cols-2 mt-20">
     <div class="col-span-7 bg-red-900 p-15 relative">
       <h2 class="text-white text-6xl mx-10 font-display">Infomøder</h2>
       <p class="text-white mt-5 mx-10 prose font-p">
@@ -220,10 +224,10 @@ import Form from "../components/Form.astro";
   </section>
   <section class="mx-5">
     <!-- section 1 med info -->
-    <section class="mt-20">
+    <section class="mt-20 lg:mr-30">
       <div
         tabindex="0"
-        class="collapse collapse-arrow border-base-300 bg-amber-600"
+        class="collapse collapse-arrow border-base-300 bg-[#F26430]"
       >
         <div
           class="collapse-title font-display text-6xl text-white hover:text-red-900"
@@ -264,10 +268,10 @@ import Form from "../components/Form.astro";
       </div>
     </section>
     <!-- section 2 med info -->
-    <section class="mt-10">
+    <section class="mt-10 lg:mr-30">
       <div
         tabindex="0"
-        class="collapse collapse-arrow border-base-300 bg-amber-600"
+        class="collapse collapse-arrow border-base-300 bg-[#F26430]"
       >
         <div
           class="collapse-title font-display text-6xl text-white hover:text-red-900"
@@ -302,10 +306,10 @@ import Form from "../components/Form.astro";
       </div>
     </section>
     <!-- section 3 med info -->
-    <section class="mt-10">
+    <section class="mt-10 lg:mr-30">
       <div
         tabindex="0"
-        class="collapse collapse-arrow border-base-300 bg-amber-600"
+        class="collapse collapse-arrow border-base-300 bg-[#F26430]"
       >
         <div
           class="collapse-title font-display text-6xl text-white hover:text-red-900"
@@ -400,8 +404,50 @@ import Form from "../components/Form.astro";
       </div>
     </section>
   </section>
-  <section class="mt-20">
-    <Button />
+  <section class="mt-20 grid lg:grid-cols-2">
+    <div class="lg:ml-10">
+      <img class="rounded-xl" src="/img/drengene.png" alt="stranden" />
+    </div>
+    <div class="mt-20 mx-10">
+      <h2 class="text-red-900 text-6xl lg:mr-20 font-display">
+        Vi har fokus på fællesskab
+      </h2>
+      <p class="mt-5 lg:mr-9 text-red-900 font-p">
+        Når du rejser på højskole i udlandet med HÖJSKOLENDK…
+      </p>
+      <ul class="list-none lg:mr-40 mt-30 font-p">
+        <li class="mt-5 flex items-start text-red-900">
+          <span class="mr-2">➤</span>
+          bliver du en del af et fantastisk fællesskab med et stærkt sammenhold
+        </li>
+        <li class="mt-5 flex items-start text-red-900 font-p">
+          <span class="mr-2">➤</span>
+          får du masser af vilde naturoplevelser, adventure og spændende kulturmøder
+        </li>
+        <li class="mt-5 flex items-start text-red-900 font-p">
+          <span class="mr-2">➤</span>
+          opdager du nye og stærke sider af dig selv, flytter grænser og får mere
+          selvtillid
+        </li>
+        <li class="mt-5 flex items-start text-red-900 font-p">
+          <span class="mr-2">➤</span>
+          rejser du altid med danske passionerede rejseledere og engagerede undervisere
+        </li>
+        <li class="mt-5 flex items-start text-red-900 font-p">
+          <span class="mr-2">➤</span>
+          får du et uforglemmeligt, unikt og trygt rejseeventyr for livet
+        </li>
+      </ul>
+      <p class="text-white mt-20">button her</p>
+    </div>
+  </section>
+  <section class="grid grid-cols-2 bg-red-900 mt-20 p-10">
+    <div>
+      <h2 class="text-white text-6xl font-display">Klar på dit eventyr?</h2>
+    </div>
+    <div>
+      <p class="text-white">button her</p>
+    </div>
   </section>
 
   <section class="mt-20">
@@ -409,7 +455,7 @@ import Form from "../components/Form.astro";
   </section>
   <!-- progress bar -->
   <div
-    class="progress-bar h-2 fixed w-full bg-gradient-to-r from-red-900 to-amber-600 left-0 origin-top-left top-0 right-0"
+    class="progress-bar h-2 fixed w-full bg-gradient-to-r from-red-900 to-[#F26430] left-0 origin-top-left top-0 right-0"
   >
   </div>
   <script>
