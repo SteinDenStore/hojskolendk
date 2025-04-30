@@ -5,6 +5,7 @@ import Link from "../components/Link.astro";
 import Card from "../components/Card.astro";
 import { Image } from "astro:assets";
 import thumbsup from "../assets/images/thumbsup.png";
+import Form from "../components/Form.astro";
 ---
 
 <MainLayout title="Höjskolendk">
@@ -151,7 +152,7 @@ import thumbsup from "../assets/images/thumbsup.png";
       </p>
     </div>
     <div class="col-span-5 p-5">
-      <h3 class="text-3xl text-red-900 font-display">Reserver en plads!</h3>
+      <Button variant="light" label="Reserver plads" />
     </div>
   </section>
   <section class="bg-amber-600 p-10 mt-20">
@@ -160,7 +161,7 @@ import thumbsup from "../assets/images/thumbsup.png";
         Læs vore anmeldelser på <a
           class="underline hover:text-red-900"
           href="https://dk.trustpilot.com/review/www.hojskolendk.dk"
-          target="_blank">TRUSTPOLIT</a
+          target="_blank">TRUSTPILOT</a
         >
       </p>
     </div>
@@ -206,7 +207,7 @@ import thumbsup from "../assets/images/thumbsup.png";
         </div>
       </div>
       <div class="mt-5 flex justify-end">
-        <p class="text-white font-display text-3xl">tilmeld dig infomøde</p>
+        <Button variant="dark" label="Tilmeld dig infomøde" />
       </div>
     </div>
     <div class="col-span-5">
@@ -401,6 +402,10 @@ import thumbsup from "../assets/images/thumbsup.png";
   </section>
   <section class="mt-20">
     <Button />
+  </section>
+
+  <section class="mt-20">
+    <Form />
   </section>
   <!-- progress bar -->
   <div

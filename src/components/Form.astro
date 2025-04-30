@@ -1,0 +1,98 @@
+---
+import Button from '../components/Button.astro';
+---
+
+
+
+
+<div class="flex flex-wrap lg:flex-nowrap min-h-screen bg-[#F26430] text-[#FFE3C2]">
+  <!-- Billede -->
+  <div class="w-full lg:w-1/2 h-64 lg:h-auto">
+    <img src="/img/form_billede.png" alt="Formular billede" class="object-cover w-full h-full" />
+  </div>
+
+  <!-- Formular -->
+  <div class="w-full lg:w-1/2 flex items-center justify-center p-6 lg:p-10">
+    <form class="w-full max-w-xl space-y-6 font-p">
+      <h1 class="text-3xl lg:text-6xl font-bold font-display text-center lg:text-left">TILMELD DIG OPHOLD !</h1>
+
+      <div>
+        <label class="font-bold block">Fornavn <span class="font-normal text-sm">(navne skal fremgå som i dit pas)</span></label>
+        <input type="text" class="w-full border-b border-[#FFE3C2] bg-transparent outline-none py-1" />
+      </div>
+
+      <div>
+        <label class="font-bold block">Efternavn</label>
+        <input type="text" class="w-full border-b border-[#FFE3C2] bg-transparent outline-none py-1" />
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <label class="font-bold block">Email</label>
+          <input type="email" class="w-full border-b border-[#FFE3C2] bg-transparent outline-none py-1" />
+        </div>
+        <div>
+          <label class="font-bold block">Telefon</label>
+          <input type="tel" class="w-full border-b border-[#FFE3C2] bg-transparent outline-none py-1" />
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <label class="font-bold block">Køn</label>
+          <select class="w-full border-b border-[#FFE3C2] bg-transparent outline-none py-1 appearance-none">
+            <option>Mand</option>
+            <option>Kvinde</option>
+            <option>Andet</option>
+          </select>
+        </div>
+        <div>
+          <label class="font-bold block">Fødselsdag</label>
+          <input type="date" class="w-full border-b border-[#FFE3C2] bg-transparent outline-none py-1" />
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <label class="font-bold block">Valg af højskole ophold</label>
+          <select class="w-full border-b border-[#FFE3C2] bg-transparent outline-none py-1 appearance-none">
+            <option>Efterår</option>
+            <option>Forår</option>
+          </select>
+        </div>
+        <div>
+          <label class="font-bold block">Hvor har du hørt om os?</label>
+          <select class="w-full border-b border-[#FFE3C2] bg-transparent outline-none py-1 appearance-none">
+            <option>Instagram</option>
+            <option>Venner</option>
+            <option>Andet</option>
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <label class="font-bold block">Bemærkning <span class="font-normal text-sm">(noget vigtigt vi skal vide om dig?)</span></label>
+        <textarea rows="2" class="w-full border-b border-[#FFE3C2] bg-transparent outline-none py-1 resize-none"></textarea>
+      </div>
+
+      <div class="space-y-3 text-sm">
+        <label class="flex items-start gap-2">
+          <input type="checkbox" class="mt-1 accent-[#FFE3C2]" />
+          Jeg har sikret mig at alle informationer er korrekte
+        </label>
+        <label class="flex items-start gap-2">
+          <input type="checkbox" class="mt-1 accent-[#FFE3C2]" />
+          Jeg har læst jeres <a href="#" class="underline">privat politik</a> og <a href="#" class="underline">generelle bestemmelser</a>
+        </label>
+      </div>
+
+      <div class="pt-4">
+        <Button label="TILMELD DIG OPHOLD" variant="orange" />
+      </div>
+      
+    </form>
+  </div>
+</div>
+
+
+

@@ -1,7 +1,61 @@
 ---
+const { variant = "light", label = "Button" } = Astro.props;
 
+const variants = {
+  light: {
+    base: {
+      bg: "bg-[#F9DFC1]",
+      text: "text-[#7B1801]",
+      border: "border-[#7B1801]",
+    },
+    hover: {
+      bg: "hover:bg-[#7B1801]",
+      text: "hover:text-[#FFE3C2]",
+      border: "hover:border-[#FFE3C2]",
+    },
+  },
+  dark: {
+    base: {
+      bg: "bg-[#7B1801]",
+      text: "text-[#FFE3C2]",
+      border: "border-[#FFE3C2]",
+    },
+    hover: {
+      bg: "hover:bg-[#F9DFC1]",
+      text: "hover:text-[#7B1801]",
+      border: "hover:border-[#7B1801]",
+    },
+  },
+  orange: {
+    base: {
+      bg: "bg-[#F26430]",
+      text: "text-[#F9DFC1]",
+      border: "border-[#F9DFC1]",
+    },
+    hover: {
+      bg: "hover:bg-[#7B1801]",
+      text: "hover:text-[#FFE3C2]",
+      border: "hover:border-[#FFE3C2]",
+    },
+  },
+};
+
+const style = variants[variant] ?? variants.light;
 ---
 
-<div>
-  <button class="border-2 border-black"><slot />a big fuck off</button>
-</div>
+<button class={`px-6 py-1 rounded-md border-2 font-bold text-2xl tracking-wide font-display 
+  ${style.base.bg} ${style.base.text} ${style.base.border}
+  ${style.hover.bg} ${style.hover.text} ${style.hover.border}
+`}>
+  {label}
+</button>
+
+
+ <!-- Light variant
+<Button variant="light" label="Button" />
+
+Dark variant
+<Button variant="dark" label="Button" />
+
+Orange variant
+<Button variant="orange" label="Button" /> 
