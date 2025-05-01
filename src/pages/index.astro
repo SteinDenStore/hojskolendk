@@ -148,17 +148,11 @@ import Form from "../components/Form.astro";
       />
     </div>
   </section>
-  <section>
-    <div class="mt-20 text-center lg:mx-100 text-red-900">
-      <p class="text-xl font-p">
-        Reservér en plads på det eventyr du drømmer om - det er gratis og
-        helt uforpligtende og sikrer dig besked inden der bliver udsolgt.
-      </p>
-    </div>
-  </section>
+ 
   <section
-    class="grid lg:grid-cols-12 sm:grid-cols-2 gap-5 mt-20 bg-orange-100 p-10"
+    class="grid lg:grid-cols-12 sm:grid-cols-2 gap-5 mt-20  p-10"
   >
+  
     <div class="col-span-7">
       <p class="text-l p-5 text-red-900 font-p">
         OBS: Når du klikker på “Reserver plads”, reserverer du ikke en plads på
@@ -170,7 +164,7 @@ import Form from "../components/Form.astro";
       <Button variant="light" label="Reserver plads" />
     </div>
   </section>
-  <section class="bg-[#F26430] p-10 mt-20">
+  <section class="bg-[#F26430] p-10 mt-0">
     <div class="">
       <p class="text-center text-[#FFEDD5] font-display text-5xl">
         Læs vore anmeldelser på <a
@@ -182,22 +176,22 @@ import Form from "../components/Form.astro";
     </div>
     <div class="flex justify-center items-center gap-3 mt-5">
       <div class="rating flex text-[#FFEDD5]">
-        <div class="mask mask-star bg-white" aria-label="1 star"></div>
-        <div class="mask mask-star bg-white" aria-label="2 star"></div>
-        <div class="mask mask-star bg-white" aria-label="3 star"></div>
-        <div class="mask mask-star bg-white" aria-label="4 star"></div>
+        <div class="mask mask-star bg-[#FFEDD5]" aria-label="1 star"></div>
+        <div class="mask mask-star bg-[#FFEDD5]" aria-label="2 star"></div>
+        <div class="mask mask-star bg-[#FFEDD5]" aria-label="3 star"></div>
+        <div class="mask mask-star bg-[#FFEDD5]" aria-label="4 star"></div>
         <div
-          class="mask mask-star bg-white"
+          class="mask mask-star bg-[#FFEDD5]"
           aria-label="5 star"
           aria-current="true"
         >
         </div>
       </div>
-      <p class="text-white font-display text-3xl">4.8</p>
+      <p class="text-[#FFEDD5] font-display text-3xl">4.8</p>
     </div>
   </section>
 
-  <section class="grid lg:grid-cols-12 sm:grid-cols-2 mt-20">
+  <section class="grid lg:grid-cols-12 sm:grid-cols-2 mt-0">
     <div class="col-span-7 bg-red-900 p-15 relative">
       <h2 class="text-[#FFEDD5] text-6xl mx-10 font-display">Infomøder</h2>
       <p class="text-[#FFEDD5] mt-5 mx-10 prose font-p">
@@ -417,37 +411,33 @@ import Form from "../components/Form.astro";
   </section>
   <section class="mt-20 grid lg:grid-cols-2">
     <div class="lg:ml-10">
-      <img class="rounded-xl" src="/img/drengene.png" alt="stranden" />
+      <img class="rounded-xl" src="/img/forskel_billede.png" alt="stranden" />
     </div>
     <div class="mt-20 mx-10">
       <h2 class="text-red-900 text-6xl lg:mr-20 font-display">
-        Vi har fokus på fællesskab
+        Vi gør en forskel
       </h2>
-      <p class="mt-5 lg:mr-9 text-red-900 font-p">
-        Når du rejser på højskole i udlandet med HÖJSKOLENDK…
+      <p class="mt-5 lg:mr-9 text-red-900 font-p max-w-[55ch]">
+        Vi tror på at alle kan gøre en forskel - selv en højskole fra Danmark. Vi støtter derfor Verdens Skoves arbejde med bevarelse og bæredygtig brug af verdens skove. vi har allerede fredet 106.785m2 regnskov. Det er vi stolte af! 
       </p>
-      <ul class="list-none lg:mr-40 mt-30 font-p">
+      <ul class="list-none lg:mr-40 mt-10 font-p">
         <li class="mt-5 flex items-start text-red-900">
           <span class="mr-2">➤</span>
-          bliver du en del af et fantastisk fællesskab med et stærkt sammenhold
+           Trees for the future // vi planter træer
         </li>
         <li class="mt-5 flex items-start text-red-900 font-p">
           <span class="mr-2">➤</span>
-          får du masser af vilde naturoplevelser, adventure og spændende kulturmøder
+          Verdens Skove // vi freder skov
         </li>
         <li class="mt-5 flex items-start text-red-900 font-p">
           <span class="mr-2">➤</span>
-          opdager du nye og stærke sider af dig selv, flytter grænser og får mere
-          selvtillid
+          World Animal Protection // dyrevelfærd på din rejse
         </li>
         <li class="mt-5 flex items-start text-red-900 font-p">
           <span class="mr-2">➤</span>
-          rejser du altid med danske passionerede rejseledere og engagerede undervisere
+          Co2 Neutralt Website // vores hjemmeside er Co2 neutraliseret
         </li>
-        <li class="mt-5 flex items-start text-red-900 font-p">
-          <span class="mr-2">➤</span>
-          får du et uforglemmeligt, unikt og trygt rejseeventyr for livet
-        </li>
+        
       </ul>
       <div class="mt-15">
         <Button variant="light" label="Læs mere" />
@@ -463,7 +453,7 @@ import Form from "../components/Form.astro";
     </div>
   </section>
 
-  <section class="mt-20">
+  <section class="mt-0">
     <Form />
   </section>
   <!-- progress bar -->
